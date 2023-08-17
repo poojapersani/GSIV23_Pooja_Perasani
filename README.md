@@ -35,19 +35,17 @@ To run and test the code:
 1. **ScrollEffect:** Creating scroll event for infinite scrolling was new for me.
 2. **react-router-dom:** Faced  errors with the latest version for react router dom.
 3. **react redux:** i didn't use react as i'm still a learner and didn't fully aware of that concept.
+4. **Handling empty or null data:** i couldn't handle the data that was coming undefined or null tried to use optional chaining etc.. but couldn't restrict all data
 
 ## Future Improvements
-
-Given more time, here are a few improvements I would make:
 
 1. **Pagination:** Implement pagination for search results and upcoming movies to enhance user experience.
 2. **Unit Testing:** Write unit tests for components and API integration using testing frameworks like Jest and React Testing Library.
 3. **Caching:** Implement caching of API responses to reduce unnecessary requests.
 4. **Error Handling:** Enhance error handling to display user-friendly error messages when API requests fail.
 
-These improvements would make the app more robust and user-friendly.
-
 ## Feedback
 
 Overall, the challenge was a great opportunity to showcase my React skills. Adding more specific details about the expected behavior and user interactions in the challenge description could help provide clearer guidance.
+Few of the data was missing in api response that i have to display as part of the project.
 
