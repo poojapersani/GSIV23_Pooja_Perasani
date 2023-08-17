@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  border-bottom: 3px solid whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid transparent; */
+  border-radius: 10px;
+  width: 50%;
+  background-color: #ccc;
+  /* padding: 10px 10px; */
+}
+
+.search-bar input {
+  flex: 1;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  background-color: #ccc;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  size: 5px;
+}
+input::placeholder {
+  font-size: 20px;
+}
+.home {
+  width: 50px;
+}
+.all-cards { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  gap: 10px;
+}
+.movie-cards {
+  width: 275px;
+  height: 330px;
+  /* border: 10px solid transparent; */
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+}
+
+.poster-images {
+  width: 100%;
+  height: 70%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+  padding: 5px;
+}
+.Rating-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.movie-details-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.movie-details-link :hover {
+    background-color: beige;
+}
