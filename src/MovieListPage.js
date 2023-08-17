@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MovieCardRender from './MovieCardRender';
-// import HeaderComponent from './HeaderComponent'
 
 const apiKey = process.env.REACT_APP_KEY_NAME;
 
@@ -42,7 +41,7 @@ const MovieListPage = () => {
 	/** rendering the card list based on filteredmovie list*/
 	return (
 		<>
-		  <MovieCardRender movies={filteredMovies} />
+		<MovieCardRender movies={filteredMovies} />
 		</>
 	  );
 	  

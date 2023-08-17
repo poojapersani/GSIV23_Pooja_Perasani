@@ -1,14 +1,24 @@
 import {  Routes, Route } from 'react-router-dom'
-import HomePageComponent from './HomePageComponent'
+// import SearchComponent from './SearchComponent'
 import MovieListPage from './MovieListPage';
-import MovieCardDetailsPage from './MovieCardDetailsPage';
+import MovieDetailsPage from './MovieDetailsPage';
+import Header from './HeaderComponent';
 const App = () => {
   return (
       <Routes>
-        <Route path='/' element={<HomePageComponent/>}/>
-        <Route path="/" element={<MovieListPage />} />
-        <Route path="/details/:movieId" element={<MovieCardDetailsPage />} />
+        <Route path="/" element={<CombinedPage />} />
+        <Route path="/details/:movieId" element={<MovieDetailsPage />} />
       </Routes>
   );
 };
-export default App;
+
+const CombinedPage = () => {
+  return (
+    <>
+      <Header showHome={true} showSearch={true} showDetails={false}/>
+      <MovieListPage />
+    </>
+  );
+};
+
+export default App; 
