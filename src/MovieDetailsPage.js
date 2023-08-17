@@ -11,6 +11,7 @@ const DetailsPage = () => {
   	const { movieId } = useParams();
   	const [movieDetails, setMovieDetails] = useState({});
 
+	/** fetching the details of movies based on the id of the each movie */
 	useEffect(() => {
 		const fetchMovieDetails = async () => {
 		try {

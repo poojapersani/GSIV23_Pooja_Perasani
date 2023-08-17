@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch } from '@fortawesome/free-solid-svg-icons';
 import MovieCardRender from './MovieCardRender';
 
-
+/** please use your own api key by adding it to .env file */
 const apiKey = process.env.REACT_APP_KEY_NAME;
 
     const Header = ({showHome, showSearch, showDetails}) => {
       const [searchQuery, setSearchQuery] = useState('');
       const [searchResults, setSearchResults] = useState([]);
-      /**Everytime user inputs search query this effect helps to fetch the results */
+      /** Everytime user inputs search query this effect helps to fetch the results */
       useEffect(() => {
         if (searchQuery.trim() === '') {
           setSearchResults([]);

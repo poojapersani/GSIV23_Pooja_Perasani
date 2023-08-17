@@ -27,21 +27,25 @@ const MovieListPage = () => {
    		fetchMovies();
   	}, [page]);
 
-	/** scroll function to set the page that we are in and scroll effect to call the scroll function evertime the page gets updated */
-	const handleScroll = () => {
-		if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500 && page < totalPages) {
-			setPage((prevPage) => prevPage + 1);
-		}
-	};
-  
+	/** handles scroll effect when the page or total_pages gests updated */
 	useEffect(() => {
+		const handleScroll = () => {
+		  if (
+			window.innerHeight + window.scrollY >=
+			document.body.offsetHeight - 500 &&
+			page < totalPages
+		  ) {
+			setPage((prevPage) => prevPage + 1);
+		  }
+		};
+	  
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
-	}, [page, totalPages]);
+	  }, [page, totalPages]);
 	/** rendering the card list based on filteredmovie list*/
 	return (
 		<>
-		<MovieCardRender movies={filteredMovies} />
+			<MovieCardRender movies={filteredMovies} />
 		</>
 	  );
 	  
